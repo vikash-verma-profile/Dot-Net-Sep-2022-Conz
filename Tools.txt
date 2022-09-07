@@ -1,0 +1,15 @@
+Visual Studio Code
+Visual Studio 2019
+Sql server
+Sql server management studio
+Node js
+Git
+
+ng
+
+1.npm install @angular/cli -g
+2.ng new <project-name>
+3.cd <project-name>
+4.ng serve
+
+npm cache clean --force

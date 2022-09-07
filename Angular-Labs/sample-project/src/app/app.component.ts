@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Customer } from './app.customerModel';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sample-project';
+
+  //object of customer type
+  CustomerModel:Customer=new Customer();
+
+  showCustomer(){
+    console.log('HI');
+    console.log(this.CustomerModel.CustomerName);
+  }
 }
