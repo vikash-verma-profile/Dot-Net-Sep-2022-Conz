@@ -1,0 +1,6 @@
+Visual Studio Code
+Visual Studio 2019
+Sql server
+Sql server management studio
+Node js
+Git
