@@ -4,3 +4,8 @@ Sql server
 Sql server management studio
 Node js
 Git
+
+ng
+
+npm install @angular/cli -g
+ng new <project-name>
