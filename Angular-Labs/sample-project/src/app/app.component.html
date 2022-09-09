@@ -1,6 +1,10 @@
+Customer Code
+<input [(ngModel)]="CustomerModel.CustomerCode" type="text" />
 Customer Name
 <input [(ngModel)]="CustomerModel.CustomerName" type="text" />
-<input type="button" value="Submit" (click)="show()"/>
+Customer Amount
+<input [(ngModel)]="CustomerModel.CustomerAmount" type="text" />
+<input type="button" value="Add Customer" (click)="Add()" />
 
 <!--
  ()=>event binding
@@ -9,6 +13,19 @@ Customer Name
 
 -->
 
-{{CustomerModel.CustomerName}}
+<!-- {{CustomerModel.CustomerName}} -->
 
 <img [src]="imageURL" />
+
+<table>
+    <tr>
+        <td>Customer Code</td>
+        <td>Customer Name</td>
+        <td>Customer Amount</td>
+    </tr>
+    <tr *ngFor="let cust of CustomerModels">
+        <td>{{cust.CustomerCode}}</td>
+        <td>{{cust.CustomerName}}</td>
+        <td>{{cust.CustomerAmount}}</td>
+    </tr>
+</table>

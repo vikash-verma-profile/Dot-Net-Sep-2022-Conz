@@ -11,7 +11,7 @@ export class AppComponent {
 
   CustomerModel:Customer=new Customer();
   CustomerModels:Array<Customer>=new Array<Customer>();
-  show(){
+  Add(){
     debugger;
     // console.log('HI');
     // alert('HI');
