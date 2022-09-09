@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sample-project';
+  imageURL="././assets/image.jpg";
 
   show(){
     debugger;
