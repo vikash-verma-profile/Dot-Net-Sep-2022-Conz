@@ -17,4 +17,10 @@ export class AppComponent {
     console.log('HI');
     console.log(this.CustomerModel.CustomerName);
   }
+
+  show(){
+    debugger;
+    console.log('HI');
+    alert('HI');
+  }
 }
