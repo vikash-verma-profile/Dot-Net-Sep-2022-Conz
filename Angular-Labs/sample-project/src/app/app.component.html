@@ -1,5 +1,5 @@
 Customer Name
-<input type="text" />
+<input [(ngModel)]="CustomerModel.CustomerName" type="text" />
 <input type="button" value="Submit" (click)="show()"/>
 
 <!--
@@ -8,5 +8,7 @@ Customer Name
  [()]=>2 way bindings
 
 -->
+
+{{CustomerModel.CustomerName}}
 
 <img [src]="imageURL" />
