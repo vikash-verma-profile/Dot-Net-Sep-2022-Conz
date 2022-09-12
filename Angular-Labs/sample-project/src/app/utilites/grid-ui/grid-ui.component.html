@@ -8,5 +8,8 @@
        <td *ngFor="let col of gridColumns">
         {{colObj[col.colName]}}
         </td>
+        <td>
+            <a (click)="selectedGrid(colObj)" class="btn btn-primary">Edit</a>
+            </td>
     </tr>
 </table>

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-grid-ui',
@@ -25,6 +25,14 @@ export class GridUiComponent implements OnInit {
   @Input("grid-data")
   set SetGridData(_gridData:Array<any>){
     this.gridData=_gridData;
+  }
+
+  @Output("grid-selected")
+  emitemitter:EventEmitter<any>=new EventEmitter<any>();
+
+  selectedGrid(_selected:any){
+    debugger;
+    this.emitemitter.emit(_selected);
   }
 }
 

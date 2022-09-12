@@ -19,4 +19,9 @@ export class CustomerComponent {
     console.log(this.CustomerModels);
     this.CustomerModel=new Customer();
   }
+
+  EditCustomer(input:any){
+    debugger;
+    this.CustomerModel=input;
+  }
 }
