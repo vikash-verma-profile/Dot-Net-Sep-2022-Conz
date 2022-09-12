@@ -33,4 +33,6 @@ Customer Amount
     </tr>
 </table> -->
 
-<app-grid-ui ></app-grid-ui>
+<app-grid-ui  [grid-columns]="[{'colName':'id'},{'colName':'CustomerCode'},{'colName':'CustomerName'},{'colName':'CustomerAmount'}]"
+[grid-data]="CustomerModels"
+></app-grid-ui>

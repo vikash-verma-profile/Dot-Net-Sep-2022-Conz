@@ -33,4 +33,6 @@ Supplier Amount
     </tr>
 </table> -->
 
-<app-grid-ui ></app-grid-ui>
+<app-grid-ui  [grid-columns]="[{'colName':'id'},{'colName':'SupplierCode'},{'colName':'SupplierName'},{'colName':'SupplierAmount'}]"
+[grid-data]="SupplierModels"
+></app-grid-ui>
