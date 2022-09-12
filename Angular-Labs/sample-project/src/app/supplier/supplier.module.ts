@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import {RouterModule} from '@angular/router';
 import { supplierroutes } from '../routing/supplierroutes';
+import { GridUIModule } from '../utilites/grid-ui/grid-ui.module';
 import { SupplierComponent } from './supplier.component';
 
 
@@ -14,7 +15,8 @@ import { SupplierComponent } from './supplier.component';
   imports: [
     CommonModule,
     FormsModule,
-    RouterModule.forChild(supplierroutes)
+    RouterModule.forChild(supplierroutes),
+    GridUIModule
   ],
   providers: [],
   bootstrap: [SupplierComponent]

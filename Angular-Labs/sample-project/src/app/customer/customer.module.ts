@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import { customerroutes } from '../routing/customerroutes';
+import { GridUIModule } from '../utilites/grid-ui/grid-ui.module';
 import { CustomerComponent } from './customer.component';
 
 @NgModule({
@@ -12,7 +13,8 @@ import { CustomerComponent } from './customer.component';
   imports: [
     CommonModule,
     FormsModule,
-    RouterModule.forChild(customerroutes)
+    RouterModule.forChild(customerroutes),
+    GridUIModule
   ],
   providers: [],
   bootstrap: [CustomerComponent]
