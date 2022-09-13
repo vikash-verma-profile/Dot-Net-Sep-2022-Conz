@@ -24,6 +24,7 @@ export class CustomerComponent implements OnInit {
   }
   title = 'sample-project';
   imageURL = "././assets/image.jpg";
+  isEdit=false;
 
   CustomerModel: Customer = new Customer();
   CustomerModels: Array<Customer> = new Array<Customer>();
@@ -34,8 +35,13 @@ export class CustomerComponent implements OnInit {
 
    // this.CustomerModels.push(this.CustomerModel);
    // console.log(this.CustomerModels);
-
-   this.http.post("http://localhost:3000/customers",this.CustomerModel).subscribe(res=>this.PostSuccess(res),res=>console.log(res))
+if(this.isEdit){
+  this.http.put("http://localhost:3000/customers",this.CustomerModel).subscribe(res=>this.PostSuccess(res),res=>console.log(res))
+}
+else{
+  this.http.post("http://localhost:3000/customers",this.CustomerModel).subscribe(res=>this.PostSuccess(res),res=>console.log(res))
+}
+   
     this.CustomerModel = new Customer();
   }
   PostSuccess(input:any){
@@ -43,6 +49,10 @@ export class CustomerComponent implements OnInit {
   }
   EditCustomer(input: any) {
     debugger;
+    this.isEdit=true;
     this.CustomerModel = input;
+  }
+  DeleteCustomer(){
+    this.http.delete("http://localhost:3000/customers/1").subscribe(res=>console.log(res),res=>console.log(res));
   }
 }

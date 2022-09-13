@@ -1,12 +1,6 @@
 {
   "customers": [
     {
-      "id": 1,
-      "CustomerCode": "101",
-      "CustomerName": "Vikash",
-      "CustomerAmount": "1000"
-    },
-    {
       "CustomerCode": "101",
       "CustomerName": "Suresh Kumar",
       "CustomerAmount": 500,
