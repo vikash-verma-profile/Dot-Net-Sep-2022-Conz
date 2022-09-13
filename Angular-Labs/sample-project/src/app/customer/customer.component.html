@@ -34,5 +34,6 @@ Customer Amount
 </table> -->
 
 <app-grid-ui  [grid-columns]="[{'colName':'id'},{'colName':'CustomerCode'},{'colName':'CustomerName'},{'colName':'CustomerAmount'}]"
-[grid-data]="CustomerModels" (grid-selected)="EditCustomer($event)"
+[grid-data]="CustomerModels" 
+(grid-selected)="EditCustomer($event)"
 ></app-grid-ui>
