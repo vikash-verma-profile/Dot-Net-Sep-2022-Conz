@@ -8,15 +8,19 @@ import { Customer } from './customer.model';
 export class CustomerComponent implements OnInit {
 
   ngOnInit(): void {
-   
-    this.http.get("http://localhost:3000/customers").subscribe(res=>this.Success(res),res=>console.log(res));
-  }
+   this.GetDataFromServer();
+   }
 
   Success(input:any){
     this.CustomerModels=input;
   }
   constructor(private http:HttpClient) {
 
+  }
+
+  GetDataFromServer(){
+    this.http.get("http://localhost:3000/customers").subscribe(res=>this.Success(res),res=>console.log(res));
+ 
   }
   title = 'sample-project';
   imageURL = "././assets/image.jpg";
@@ -28,11 +32,15 @@ export class CustomerComponent implements OnInit {
     // console.log('HI');
     // alert('HI');
 
-    this.CustomerModels.push(this.CustomerModel);
-    console.log(this.CustomerModels);
+   // this.CustomerModels.push(this.CustomerModel);
+   // console.log(this.CustomerModels);
+
+   this.http.post("http://localhost:3000/customers",this.CustomerModel).subscribe(res=>this.PostSuccess(res),res=>console.log(res))
     this.CustomerModel = new Customer();
   }
-
+  PostSuccess(input:any){
+    this.GetDataFromServer();
+  }
   EditCustomer(input: any) {
     debugger;
     this.CustomerModel = input;

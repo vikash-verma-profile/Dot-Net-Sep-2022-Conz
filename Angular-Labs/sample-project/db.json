@@ -4,7 +4,19 @@
       "id": 1,
       "CustomerCode": "101",
       "CustomerName": "Vikash",
-	  "CustomerAmount": "1000"
+      "CustomerAmount": "1000"
+    },
+    {
+      "CustomerCode": "101",
+      "CustomerName": "Suresh Kumar",
+      "CustomerAmount": 500,
+      "id": 2
+    },
+    {
+      "CustomerCode": "103",
+      "CustomerName": "Ravi Kumar",
+      "CustomerAmount": 5000,
+      "id": 3
     }
   ]
 }
