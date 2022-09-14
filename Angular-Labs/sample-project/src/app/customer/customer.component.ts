@@ -12,6 +12,7 @@ export class CustomerComponent implements OnInit {
    }
 
   Success(input:any){
+    console.log(input);
     this.CustomerModels=input;
   }
   constructor(private http:HttpClient) {
@@ -19,7 +20,7 @@ export class CustomerComponent implements OnInit {
   }
 
   GetDataFromServer(){
-    this.http.get("http://localhost:3000/customers").subscribe(res=>this.Success(res),res=>console.log(res));
+    this.http.get("https://localhost:44354/api/Customer").subscribe(res=>this.Success(res),res=>console.log(res));
  
   }
   title = 'sample-project';
@@ -36,10 +37,10 @@ export class CustomerComponent implements OnInit {
    // this.CustomerModels.push(this.CustomerModel);
    // console.log(this.CustomerModels);
 if(this.isEdit){
-  this.http.put("http://localhost:3000/customers",this.CustomerModel).subscribe(res=>this.PostSuccess(res),res=>console.log(res))
+  this.http.put("https://localhost:44354/api/Customer",this.CustomerModel).subscribe(res=>this.PostSuccess(res),res=>console.log(res))
 }
 else{
-  this.http.post("http://localhost:3000/customers",this.CustomerModel).subscribe(res=>this.PostSuccess(res),res=>console.log(res))
+  this.http.post("https://localhost:44354/api/Customer",this.CustomerModel).subscribe(res=>this.PostSuccess(res),res=>console.log(res))
 }
    
     this.CustomerModel = new Customer();

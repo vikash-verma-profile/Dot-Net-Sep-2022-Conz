@@ -12,11 +12,20 @@ namespace CustomerAPP.Controllers
     [ApiController]
     public class CustomerController : ControllerBase
     {
+        CustomerDBContext db = new CustomerDBContext();
         [HttpGet]
         public IEnumerable<Customer> Get()
         {
-            CustomerDBContext db = new CustomerDBContext();
             return db.Customers;
+        }
+
+        [HttpPost]
+        public IActionResult Post([FromBody]Customer customer)
+        {
+            db.Customers.Add(customer);
+            db.SaveChanges();
+            var response = new { Status="Success"};
+            return Ok(response);
         }
     }
 }
