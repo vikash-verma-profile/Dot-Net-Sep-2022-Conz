@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using CustomerAPP.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -12,9 +13,10 @@ namespace CustomerAPP.Controllers
     public class CustomerController : ControllerBase
     {
         [HttpGet]
-        public string Get()
+        public IEnumerable<Customer> Get()
         {
-            return "Hello";
+            CustomerDBContext db = new CustomerDBContext();
+            return db.Customers;
         }
     }
 }
