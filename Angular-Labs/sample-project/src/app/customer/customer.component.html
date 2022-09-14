@@ -9,7 +9,7 @@ Customer Amount
 <br/><br/>
 <h2>Customer List</h2>
 
-<input type="button" (click)="DeleteCustomer()" value="delete" />
+<!-- <input type="button" (click)="DeleteCustomer()" value="delete" /> -->
 <!--
  ()=>event binding
  []=>property binding
@@ -38,4 +38,5 @@ Customer Amount
 <app-grid-ui  [grid-columns]="[{'colName':'id'},{'colName':'customerCode'},{'colName':'customerName'},{'colName':'customerAmount'}]"
 [grid-data]="CustomerModels" 
 (grid-selected)="EditCustomer($event)"
+(grid-deleted)="DeleteCustomer($event)"
 ></app-grid-ui>

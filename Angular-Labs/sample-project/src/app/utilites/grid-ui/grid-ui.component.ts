@@ -34,5 +34,13 @@ export class GridUiComponent implements OnInit {
     debugger;
     this.emitemitter.emit(_selected);
   }
+
+  @Output("grid-deleted")
+  emitemitterd:EventEmitter<any>=new EventEmitter<any>();
+
+  deletedGrid(_dselected:any){
+    debugger;
+    this.emitemitterd.emit(_dselected);
+  }
 }
 

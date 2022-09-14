@@ -53,7 +53,7 @@ else{
     this.isEdit=true;
     this.CustomerModel = input;
   }
-  DeleteCustomer(){
-    this.http.delete("http://localhost:3000/customers/1").subscribe(res=>console.log(res),res=>console.log(res));
+  DeleteCustomer(input:any){
+    this.http.delete("https://localhost:44354/api/Customer?id="+input.id).subscribe(res=>this.PostSuccess(res),res=>console.log(res));
   }
 }

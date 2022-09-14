@@ -27,5 +27,15 @@ namespace CustomerAPP.Controllers
             var response = new { Status="Success"};
             return Ok(response);
         }
+
+        [HttpDelete]
+        public IActionResult Delete(int id)
+        {
+            var data = db.Customers.Where(x => x.Id == id).FirstOrDefault();
+            db.Customers.Remove(data);
+            db.SaveChanges();
+            var response = new { Status = "Success" };
+            return Ok(response);
+        }
     }
 }
