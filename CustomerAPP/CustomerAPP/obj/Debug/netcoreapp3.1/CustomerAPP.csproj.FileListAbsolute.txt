@@ -6,7 +6,6 @@ C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug
 C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\CustomerAPP.runtimeconfig.dev.json
 C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\CustomerAPP.dll
 C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\CustomerAPP.pdb
-C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.csproj.AssemblyReference.cache
 C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.AssemblyInfoInputs.cache
 C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.AssemblyInfo.cs
@@ -62,3 +61,5 @@ C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug
 C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.csproj.CopyComplete
+C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.csproj.AssemblyReference.cache

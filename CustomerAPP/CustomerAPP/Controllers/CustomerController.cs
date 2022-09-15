@@ -1,4 +1,5 @@
 ﻿using CustomerAPP.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -10,6 +11,7 @@ namespace CustomerAPP.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CustomerController : ControllerBase
     {
         CustomerDBContext db = new CustomerDBContext();
@@ -34,6 +36,7 @@ namespace CustomerAPP.Controllers
             var data = db.Customers.Where(x => x.Id == id).FirstOrDefault();
             db.Customers.Remove(data);
             db.SaveChanges();
+            //
             var response = new { Status = "Success" };
             return Ok(response);
         }

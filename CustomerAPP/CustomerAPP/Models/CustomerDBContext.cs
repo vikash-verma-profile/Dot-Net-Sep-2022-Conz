@@ -18,6 +18,7 @@ namespace CustomerAPP.Models
         }
 
         public virtual DbSet<Customer> Customers { get; set; }
+        public virtual DbSet<TblLogin> TblLogins { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -41,6 +42,15 @@ namespace CustomerAPP.Models
                 entity.Property(e => e.CustomerCode).HasMaxLength(50);
 
                 entity.Property(e => e.CustomerName).HasMaxLength(50);
+            });
+
+            modelBuilder.Entity<TblLogin>(entity =>
+            {
+                entity.ToTable("tblLogin");
+
+                entity.Property(e => e.Password).HasMaxLength(50);
+
+                entity.Property(e => e.UserName).HasMaxLength(50);
             });
 
             OnModelCreatingPartial(modelBuilder);

@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "CtQM5eZrO1ILbVFhtUN5uO2+Mb50EzAAYgz/NZC1xSAoZhT6Nm2QWw4wyPS1PIgkHxIrWQjlr+EO17FvSM6ytw==",
+  "dgSpecHash": "rlNLv9/gwFxtZ9KHCy6J7pMrB/yDjcXylj8wlyI9T7HXxVZ3U8xrlo4CSkF6dnf+NFp3NpPmHf+gM8ttFX73fw==",
   "success": true,
   "projectFilePath": "C:\\Users\\svdsk31\\Desktop\\Dot-Net-Sep-2022-Conz\\CustomerAPP\\CustomerAPP\\CustomerAPP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\svdsk31\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\svdsk31\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.29\\microsoft.aspnetcore.authentication.jwtbearer.3.1.29.nupkg.sha512",
     "C:\\Users\\svdsk31\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\svdsk31\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\svdsk31\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
