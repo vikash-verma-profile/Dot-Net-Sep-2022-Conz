@@ -23,10 +23,11 @@ namespace CustomerAPP.Controllers
             _config = config;
         }
         [HttpPost]
+        [Route("login")]
         public IActionResult Login(TblLogin login)
         {
             IActionResult response = Unauthorized();
-            var user = AuthenticateUser(login);
+            var user = AuthenticateUser(login,false);
             if (user != null)
             {
                 var tokenString = GenerateToken(user);
@@ -35,16 +36,25 @@ namespace CustomerAPP.Controllers
             return response;
         }
 
-        private TblLogin AuthenticateUser(TblLogin login)
+        private TblLogin AuthenticateUser(TblLogin login,bool IsRegister)
         {
-            if (db.TblLogins.Any(x=>x.UserName==login.UserName && x.Password==login.Password))
+            if (IsRegister)
             {
-                return db.TblLogins.Where(x => x.UserName == login.UserName && x.Password == login.Password).FirstOrDefault();
+                db.TblLogins.Add(login);
+                return login;
             }
             else
             {
-                return null;
+                if (db.TblLogins.Any(x => x.UserName == login.UserName && x.Password == login.Password))
+                {
+                    return db.TblLogins.Where(x => x.UserName == login.UserName && x.Password == login.Password).FirstOrDefault();
+                }
+                else
+                {
+                    return null;
+                }
             }
+       
         }
 
         private string GenerateToken(TblLogin login)
@@ -58,6 +68,19 @@ namespace CustomerAPP.Controllers
                 expires:DateTime.Now.AddMinutes(120),
                 signingCredentials:credentials);
             return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
+        [HttpPost]
+        public IActionResult Register(TblLogin login)
+        {
+            IActionResult response = Unauthorized();
+            var user = AuthenticateUser(login,true);
+            if (user != null)
+            {
+                var tokenString = GenerateToken(user);
+                response = Ok(new { token = tokenString });
+            }
+            return response;
         }
     }
 }
