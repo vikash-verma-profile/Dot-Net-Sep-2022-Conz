@@ -6,11 +6,14 @@ import { Injectable } from '@angular/core';
 })
 export class LoginServiceService {
 
-  _loginUrl="https://localhost:44354/api/login";
-  _registerUrl="https://localhost:44354/api/register";
+  _loginUrl="https://localhost:44354/api/login/login-user";
+  _registerUrl="https://localhost:44354/api/login/register-user";
   constructor(private http:HttpClient) { }
 
   loginUser(login:any){
     return this.http.post<any>(this._loginUrl,login);
+  }
+  getToken(){
+    return localStorage.getItem('token');
   }
 }

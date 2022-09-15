@@ -1,4 +1,4 @@
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -7,6 +7,7 @@ import { LoginComponent } from '../login/login.component';
 import { MasterComponent } from '../master/master.component';
 import { Mainroutes } from '../routing/mainroutes';
 import { LoginServiceService } from '../services/login-service.service';
+import { TokenInterceptorService } from '../services/tokenInceptorservice';
 import { HomeComponent } from './home.component';
 
 

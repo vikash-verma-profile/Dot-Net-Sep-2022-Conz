@@ -23,7 +23,7 @@ namespace CustomerAPP.Controllers
             _config = config;
         }
         [HttpPost]
-        [Route("login")]
+        [Route("login-user")]
         public IActionResult Login(TblLogin login)
         {
             IActionResult response = Unauthorized();
@@ -71,6 +71,7 @@ namespace CustomerAPP.Controllers
         }
 
         [HttpPost]
+        [Route("register-user")]
         public IActionResult Register(TblLogin login)
         {
             IActionResult response = Unauthorized();

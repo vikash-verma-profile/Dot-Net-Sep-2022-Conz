@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { UserData } from '../models/userdata';
 import { LoginServiceService } from '../services/login-service.service';
 
@@ -8,7 +9,7 @@ import { LoginServiceService } from '../services/login-service.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private _service:LoginServiceService) { }
+  constructor(private _service:LoginServiceService,private _router:Router) { }
 
   UserDataModel:UserData=new UserData();
   ngOnInit(): void {
@@ -16,9 +17,9 @@ export class LoginComponent implements OnInit {
 
   loginUser(){
     this._service.loginUser(this.UserDataModel).subscribe(res=>{
-      console.log('Hi You are able to login');
-      alert('Hi');
+     
       localStorage.setItem('token',res.token);
+      this._router.navigate(['customer/add']);
     },res=>console.log(res));
   }
 

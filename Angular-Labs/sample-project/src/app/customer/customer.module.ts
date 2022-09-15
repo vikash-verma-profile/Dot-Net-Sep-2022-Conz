@@ -5,7 +5,9 @@ import {RouterModule} from '@angular/router';
 import { customerroutes } from '../routing/customerroutes';
 import { GridUIModule } from '../utilites/grid-ui/grid-ui.module';
 import { CustomerComponent } from './customer.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http'
+import { LoginServiceService } from '../services/login-service.service';
+import { TokenInterceptorService } from '../services/tokenInceptorservice';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,7 @@ import {HttpClientModule} from '@angular/common/http'
     GridUIModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [LoginServiceService,{provide:HTTP_INTERCEPTORS,useClass:TokenInterceptorService,multi:true}],
   bootstrap: [CustomerComponent]
 })
 export class CustomerModule { }
