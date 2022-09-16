@@ -11,7 +11,13 @@ export class Customer{
         var _builder=new FormBuilder();
         this.formCustomerGroup=_builder.group({});
         this.formCustomerGroup.addControl("CustomerNameControl",new FormControl('',Validators.required));
-        this.formCustomerGroup.addControl("CustomerCodeControl",new FormControl('',Validators.required));
+        //this.formCustomerGroup.addControl("CustomerCodeControl",new FormControl('',Validators.required));
         this.formCustomerGroup.addControl("CustomerAmountControl",new FormControl('',Validators.required));
+
+        var validationcollection=[];
+        validationcollection.push(Validators.required);
+        validationcollection.push(Validators.pattern("^[0-9]{4,4}$"));
+        this.formCustomerGroup.addControl("CustomerCodeControl",new FormControl('',Validators.compose(validationcollection)));
+
     }
 }

@@ -61,4 +61,8 @@ export class CustomerComponent implements OnInit {
   DeleteCustomer(input: any) {
     this.http.delete("https://localhost:44354/api/Customer?id=" + input.id).subscribe(res => this.PostSuccess(res), res => console.log(res));
   }
+
+  hasError(typeofValidator:string,controlname:string):Boolean{
+    return this.CustomerModel.formCustomerGroup.controls[controlname].hasError(typeofValidator);
+  }
 }

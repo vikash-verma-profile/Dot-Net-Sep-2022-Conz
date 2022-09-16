@@ -1,9 +1,12 @@
 <form [formGroup]="CustomerModel.formCustomerGroup">
 <h1>Add Customer</h1>
 Customer Code
-<input [(ngModel)]="CustomerModel.customerCode" formControlName="CustomerNameControl" type="text" /><br/><br/>
+<input [(ngModel)]="CustomerModel.customerCode" formControlName="CustomerCodeControl" type="text" /><br/><br/>
+<p style="color: red;" [hidden]="!(hasError('pattern','CustomerCodeControl'))">Customer Code should be proper</p>
+<p style="color: red;" [hidden]="!(hasError('required','CustomerCodeControl'))">Customer Code is required</p>
+
 Customer Name
-<input [(ngModel)]="CustomerModel.customerName"  formControlName="CustomerCodeControl" type="text" /><br/><br/>
+<input [(ngModel)]="CustomerModel.customerName"  formControlName="CustomerNameControl" type="text" /><br/><br/>
 Customer Amount
 <input [(ngModel)]="CustomerModel.customerAmount" formControlName="CustomerAmountControl" type="number" /><br/><br/>
 <input type="button" [disabled]="!(CustomerModel.formCustomerGroup.valid)"  value="Add Customer" (click)="Add()" />
