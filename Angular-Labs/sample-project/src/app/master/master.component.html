@@ -21,16 +21,19 @@
                     <a class="nav-link active" aria-current="page" [routerLink]="['home']">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" [routerLink]="['login']">Login</a>
+                    <a class="nav-link active" aria-current="page" *ngIf="LoggedIn(false)" [routerLink]="['login']">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" [routerLink]="['register']">Register</a>
+                    <a class="nav-link active" aria-current="page"  *ngIf="LoggedIn(false)"  [routerLink]="['register']">Register</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['customer/add']">Customer</a>
+                    <a class="nav-link" *ngIf="LoggedIn(true)" [routerLink]="['customer/add']">Customer</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['supplier/add']">Supplier</a>
+                    <a class="nav-link" *ngIf="LoggedIn(true)" [routerLink]="['supplier/add']">Supplier</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="cursor:pointer" *ngIf="LoggedIn(true)" (click)="Logout()">Logout</a>
                 </li>
             </ul>
         </div>
