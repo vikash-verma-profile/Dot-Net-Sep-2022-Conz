@@ -11,7 +11,7 @@ namespace CustomerAPP.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    [Authorize(AuthenticationSchemes =Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
     public class CustomerController : ControllerBase
     {
         CustomerDBContext db = new CustomerDBContext();

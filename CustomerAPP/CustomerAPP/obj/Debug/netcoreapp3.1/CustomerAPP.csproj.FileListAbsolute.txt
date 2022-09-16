@@ -67,3 +67,4 @@ C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug
 C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.dll
 C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.pdb
 C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.genruntimeconfig.cache
+C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.csproj.AssemblyReference.cache

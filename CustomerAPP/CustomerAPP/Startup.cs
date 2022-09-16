@@ -29,33 +29,34 @@ namespace CustomerAPP
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddSwaggerGen(x => {
-            //    x.SwaggerDoc("v2", new OpenApiInfo { Title = "CustomerAPP", Version = "v2" });
-            //    x.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-            //    {
-            //        In = ParameterLocation.Header,
-            //        Description = "Please enter token",
-            //        Name = "Authorization",
-            //        Type = SecuritySchemeType.Http,
-            //        BearerFormat = "JWT",
-            //        Scheme = "Bearer"
-            //    });
-            //    x.AddSecurityRequirement(new OpenApiSecurityRequirement {
-            //        {
-            //            new OpenApiSecurityScheme
-            //            {
-            //                Reference=new OpenApiReference
-            //                {
-            //                    Type=ReferenceType.SecurityScheme,
-            //                    Id="Bearer"
-            //                }
-            //            },
-            //            new string[]{ }
-            //        }
-            //    });
-            //});
+            services.AddSwaggerGen(x =>
+            {
+                x.SwaggerDoc("v2", new OpenApiInfo { Title = "CustomerAPP", Version = "v2" });
+                x.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
+                {
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer",
+                    BearerFormat = "JWT",
+                    In = ParameterLocation.Header,
+                    Description = "Please enter token" 
+                });
+                x.AddSecurityRequirement(new OpenApiSecurityRequirement {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference=new OpenApiReference
+                            {
+                                Type=ReferenceType.SecurityScheme,
+                                Id="Bearer"
+                            }
+                        },
+                        new string[]{ }
+                    }
+                });
+            });
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).
-                AddJwtBearer(options => 
+                AddJwtBearer(options =>
                 {
                     options.TokenValidationParameters = new TokenValidationParameters
                     {
@@ -69,13 +70,11 @@ namespace CustomerAPP
                     };
                 });
             services.AddControllers();
-            services.AddSwaggerGen();
-
-
-        }
+           // services.AddSwaggerGen();
+            }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+            public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -88,7 +87,9 @@ namespace CustomerAPP
             app.UseAuthentication();
             app.UseAuthorization();
             app.UseSwagger();
-            app.UseSwaggerUI();
+            app.UseSwaggerUI(c=> {
+                c.SwaggerEndpoint("/swagger/v2/swagger.json","Customer app v2");
+            });
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
