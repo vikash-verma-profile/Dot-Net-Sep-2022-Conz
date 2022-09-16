@@ -39,7 +39,7 @@ namespace CustomerAPP
                     Scheme = "Bearer",
                     BearerFormat = "JWT",
                     In = ParameterLocation.Header,
-                    Description = "Please enter token" 
+                    Description = "Please enter token enter 'bearer' [space] <token>"
                 });
                 x.AddSecurityRequirement(new OpenApiSecurityRequirement {
                     {
