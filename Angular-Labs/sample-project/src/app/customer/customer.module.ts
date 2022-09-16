@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import { customerroutes } from '../routing/customerroutes';
 import { GridUIModule } from '../utilites/grid-ui/grid-ui.module';
@@ -16,6 +16,7 @@ import { TokenInterceptorService } from '../services/tokenInceptorservice';
   imports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forChild(customerroutes),
     GridUIModule,
     HttpClientModule
