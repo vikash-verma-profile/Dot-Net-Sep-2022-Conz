@@ -10,7 +10,7 @@ import { LoginServiceService } from '../services/login-service.service';
 export class LoginComponent implements OnInit {
 
   constructor(private _service:LoginServiceService,private _router:Router) { }
-
+  ErrorMessage:any='';
   UserDataModel:UserData=new UserData();
   ngOnInit(): void {
   }
@@ -20,7 +20,12 @@ export class LoginComponent implements OnInit {
      
       localStorage.setItem('token',res.token);
       this._router.navigate(['customer/add']);
-    },res=>console.log(res));
+    },res=>
+    {
+      console.log(res);
+      this.ErrorMessage="Some error have occured";
+      document.getElementById('btnErrorMsg')?.click();
+    });
   }
 
 }

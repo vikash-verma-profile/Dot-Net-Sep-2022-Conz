@@ -63,3 +63,8 @@ C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug
 C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.csproj.CopyComplete
 C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.csproj.AssemblyReference.cache
+C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.MvcApplicationPartsAssemblyInfo.cs
