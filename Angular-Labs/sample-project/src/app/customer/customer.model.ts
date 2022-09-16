@@ -16,7 +16,7 @@ export class Customer{
 
         var validationcollection=[];
         validationcollection.push(Validators.required);
-        validationcollection.push(Validators.pattern("^[0-9]{4,4}$"));
+        validationcollection.push(Validators.pattern("^[0-9]{3,3}$"));
         this.formCustomerGroup.addControl("CustomerCodeControl",new FormControl('',Validators.compose(validationcollection)));
 
     }
