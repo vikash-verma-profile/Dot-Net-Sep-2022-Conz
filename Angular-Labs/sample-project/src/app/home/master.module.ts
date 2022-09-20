@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import {RouterModule} from '@angular/router';
+import { JwtHelperService, JWT_OPTIONS } from '@auth0/angular-jwt';
 import { LoginComponent } from '../login/login.component';
 import { MasterComponent } from '../master/master.component';
 import { Mainroutes } from '../routing/mainroutes';
@@ -23,7 +24,7 @@ import { HomeComponent } from './home.component';
     RouterModule.forRoot(Mainroutes),
     HttpClientModule
   ],
-  providers: [LoginServiceService],
+  providers: [LoginServiceService,{provide:JWT_OPTIONS,useValue:JWT_OPTIONS},JwtHelperService],
   bootstrap: [MasterComponent]
 })
 export class MasterModule { }

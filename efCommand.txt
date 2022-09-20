@@ -1,1 +1,1 @@
-scaffold-DbContext "Data Source=LEVELUPSERVER;Initial Catalog=CustomerDB;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Force
+scaffold-DbContext "Data Source=DESKTOP-PP0TB7N;Initial Catalog=CustomerDB;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Force

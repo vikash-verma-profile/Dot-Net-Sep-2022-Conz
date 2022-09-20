@@ -9,6 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.Extensions.Configuration;
 using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 
 namespace CustomerAPP.Controllers
 {
@@ -60,14 +61,20 @@ namespace CustomerAPP.Controllers
         private string GenerateToken(TblLogin login)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["jwt:Key"]));
-            var credentials = new SigningCredentials(securityKey,SecurityAlgorithms.HmacSha256);
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256Signature);
 
-            var token = new JwtSecurityToken(_config["jwt:Issuer"],
-                _config["jwt:Audience"],
-                null,
-                expires:DateTime.Now.AddMinutes(120),
-                signingCredentials:credentials);
-            return new JwtSecurityTokenHandler().WriteToken(token);
+            var token = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new Claim[] 
+                { 
+                    new Claim(ClaimTypes.Name, login.UserName) 
+                }),
+                Expires=DateTime.Now.AddMinutes(120),
+                SigningCredentials= credentials
+            };
+            var TokenHandler = new JwtSecurityTokenHandler();
+            var tokenGenerated = TokenHandler.CreateToken(token);
+            return TokenHandler.WriteToken(tokenGenerated).ToString();
         }
 
         [HttpPost]
@@ -82,6 +89,13 @@ namespace CustomerAPP.Controllers
                 response = Ok(new { token = tokenString });
             }
             return response;
+        }
+
+        [HttpGet]
+        [Route("get-data")]
+        public IEnumerable<TblDummyDatum> GetData(int id)
+        {
+            return db.TblDummyData.Where(x => x.LoginId == id);
         }
     }
 }

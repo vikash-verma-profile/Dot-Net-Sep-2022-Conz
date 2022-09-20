@@ -5966,19 +5966,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\svdsk31\\.nuget\\packages\\": {}
+    "C:\\Users\\LEVEL UP SOLUTIONS 1\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\svdsk31\\Desktop\\Dot-Net-Sep-2022-Conz\\CustomerAPP\\CustomerAPP\\CustomerAPP.csproj",
+      "projectUniqueName": "C:\\Users\\LEVEL UP SOLUTIONS 1\\Desktop\\Dot-Net-Sep-2022-Conz\\CustomerAPP\\CustomerAPP\\CustomerAPP.csproj",
       "projectName": "CustomerAPP",
-      "projectPath": "C:\\Users\\svdsk31\\Desktop\\Dot-Net-Sep-2022-Conz\\CustomerAPP\\CustomerAPP\\CustomerAPP.csproj",
-      "packagesPath": "C:\\Users\\svdsk31\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\svdsk31\\Desktop\\Dot-Net-Sep-2022-Conz\\CustomerAPP\\CustomerAPP\\obj\\",
+      "projectPath": "C:\\Users\\LEVEL UP SOLUTIONS 1\\Desktop\\Dot-Net-Sep-2022-Conz\\CustomerAPP\\CustomerAPP\\CustomerAPP.csproj",
+      "packagesPath": "C:\\Users\\LEVEL UP SOLUTIONS 1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\LEVEL UP SOLUTIONS 1\\Desktop\\Dot-Net-Sep-2022-Conz\\CustomerAPP\\CustomerAPP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\svdsk31\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LEVEL UP SOLUTIONS 1\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6053,7 +6053,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.410\\RuntimeIdentifierGraph.json"
       }
     }
   }

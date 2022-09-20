@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
     this._service.loginUser(this.UserDataModel).subscribe(res=>{
      
       localStorage.setItem('token',res.token);
-      this._router.navigate(['customer/add']);
+      this._router.navigate(['dummy']);
     },res=>
     {
       console.log(res);
