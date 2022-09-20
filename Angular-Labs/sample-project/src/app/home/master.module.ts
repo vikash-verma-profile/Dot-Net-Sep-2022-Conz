@@ -7,6 +7,7 @@ import { JwtHelperService, JWT_OPTIONS } from '@auth0/angular-jwt';
 import { LoginComponent } from '../login/login.component';
 import { MasterComponent } from '../master/master.component';
 import { Mainroutes } from '../routing/mainroutes';
+import { AuthgaurdService } from '../services/authgaurd.service';
 import { LoginServiceService } from '../services/login-service.service';
 import { TokenInterceptorService } from '../services/tokenInceptorservice';
 import { HomeComponent } from './home.component';
@@ -24,7 +25,7 @@ import { HomeComponent } from './home.component';
     RouterModule.forRoot(Mainroutes),
     HttpClientModule
   ],
-  providers: [LoginServiceService,{provide:JWT_OPTIONS,useValue:JWT_OPTIONS},JwtHelperService],
+  providers: [AuthgaurdService,LoginServiceService,{provide:JWT_OPTIONS,useValue:JWT_OPTIONS},JwtHelperService],
   bootstrap: [MasterComponent]
 })
 export class MasterModule { }
