@@ -23,6 +23,18 @@ export class AppComponent implements OnInit {
   Success(input: any) {
     console.log(atob(input.value));
   }
+
+  uploadFile(files:any){
+    if(files.length==0){
+      return ;
+    }
+
+    let fileToUpload=<File>files[0];
+    const formData=new FormData();
+
+  }
+
+
 }
 
 

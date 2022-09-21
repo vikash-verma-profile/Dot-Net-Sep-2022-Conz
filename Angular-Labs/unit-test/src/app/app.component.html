@@ -1,5 +1,5 @@
 <!-- <img [src]="imagepath" /> -->
 
 Upload Image
-<input type="file" />
-<input type="button" value="Upload" />
+<input type="file" #file (change)="uploadFile(file.files)" style="display: none;" />
+<button  (click)="file.click()" >Upload</button>
