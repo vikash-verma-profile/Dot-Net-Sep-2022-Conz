@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using UnitTestCase.Models;
 
 namespace UnitTestCase.Controllers
 {
@@ -14,6 +15,14 @@ namespace UnitTestCase.Controllers
     [ApiController]
     public class HomeController : ControllerBase
     {
+        CustomerDBContext db = new CustomerDBContext();
+
+        [HttpGet]
+        [Route("get-images")]
+        public IEnumerable<TblImage> getImages()
+        {
+            return db.TblImages;
+        }
         public IActionResult Get()
         {
             var encoded= Convert.ToBase64String(Encoding.UTF8.GetBytes("Vikash Verma"));
@@ -34,6 +43,10 @@ namespace UnitTestCase.Controllers
                 {
                     file.CopyTo(stream);
                 }
+                TblImage obj = new TblImage();
+                obj.ImageUrl = dbPath;
+                db.TblImages.Add(obj);
+                db.SaveChanges();
                 return Ok(new { dbPath });
             }
             else

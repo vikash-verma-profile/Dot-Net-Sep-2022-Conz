@@ -3,3 +3,11 @@
 Upload Image
 <input type="file" #file (change)="uploadFile(file.files)" style="display: none;" />
 <button  (click)="file.click()" >Upload</button>
+
+
+<table>
+    <tr *ngFor="let cust of images">
+        <td><img src="https://localhost:44307/{{cust.imageUrl}}"></td>
+    </tr>
+
+</table>
