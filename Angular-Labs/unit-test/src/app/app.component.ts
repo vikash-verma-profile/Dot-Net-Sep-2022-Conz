@@ -33,6 +33,8 @@ export class AppComponent implements OnInit {
     const formData=new FormData();
 
     formData.append('file',fileToUpload,fileToUpload.name)
+
+    this.http.post('https://localhost:44307/api/home/',formData).subscribe(res=>console.log(res),res=>console.log(res));
   }
 
 
