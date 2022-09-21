@@ -32,6 +32,7 @@ export class AppComponent implements OnInit {
     let fileToUpload=<File>files[0];
     const formData=new FormData();
 
+    formData.append('file',fileToUpload,fileToUpload.name)
   }
 
 
