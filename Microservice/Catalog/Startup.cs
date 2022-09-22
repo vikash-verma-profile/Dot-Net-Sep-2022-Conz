@@ -1,7 +1,10 @@
+using Catalog.Models;
+using Catalog.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -26,6 +29,8 @@ namespace Catalog
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddScoped<ICatalogService, CatalogServiceImpl>();
+            services.AddDbContext<CatalogDBContext>(x=>x.UseSqlServer(Configuration.GetConnectionString("CatalogDbConnection")));
             services.AddSwaggerGen();
         }
 
