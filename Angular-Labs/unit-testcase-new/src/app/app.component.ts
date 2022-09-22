@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,6 +9,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Vikash';
 
+  constructor(private http:HttpClient){
+
+  }
   print():string{
     return "vikash";
   }
