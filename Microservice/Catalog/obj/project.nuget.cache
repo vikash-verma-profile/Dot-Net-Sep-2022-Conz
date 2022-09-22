@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "3nUIRSzEqXrCUTPiY53U5d7yVyc2HoB40nR6h5zLDwk4GxjRD3KCdH+55RdHNNrm84XcC5eHX/8nbKhX5hBtWQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\LEVEL UP SOLUTIONS 1\\Desktop\\Dot-Net-Sep-2022-Conz\\Microservice\\Catalog\\Catalog.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LEVEL UP SOLUTIONS 1\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\LEVEL UP SOLUTIONS 1\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\LEVEL UP SOLUTIONS 1\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\LEVEL UP SOLUTIONS 1\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
