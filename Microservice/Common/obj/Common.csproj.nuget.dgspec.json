@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LEVEL UP SOLUTIONS 1\\Desktop\\Dot-Net-Sep-2022-Conz\\Microservice\\Gateway\\Gateway.csproj": {}
+    "C:\\Users\\LEVEL UP SOLUTIONS 1\\Desktop\\Dot-Net-Sep-2022-Conz\\Microservice\\Common\\Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LEVEL UP SOLUTIONS 1\\Desktop\\Dot-Net-Sep-2022-Conz\\Microservice\\Gateway\\Gateway.csproj": {
+    "C:\\Users\\LEVEL UP SOLUTIONS 1\\Desktop\\Dot-Net-Sep-2022-Conz\\Microservice\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LEVEL UP SOLUTIONS 1\\Desktop\\Dot-Net-Sep-2022-Conz\\Microservice\\Gateway\\Gateway.csproj",
-        "projectName": "Gateway",
-        "projectPath": "C:\\Users\\LEVEL UP SOLUTIONS 1\\Desktop\\Dot-Net-Sep-2022-Conz\\Microservice\\Gateway\\Gateway.csproj",
+        "projectUniqueName": "C:\\Users\\LEVEL UP SOLUTIONS 1\\Desktop\\Dot-Net-Sep-2022-Conz\\Microservice\\Common\\Common.csproj",
+        "projectName": "Common",
+        "projectPath": "C:\\Users\\LEVEL UP SOLUTIONS 1\\Desktop\\Dot-Net-Sep-2022-Conz\\Microservice\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\LEVEL UP SOLUTIONS 1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LEVEL UP SOLUTIONS 1\\Desktop\\Dot-Net-Sep-2022-Conz\\Microservice\\Gateway\\obj\\",
+        "outputPath": "C:\\Users\\LEVEL UP SOLUTIONS 1\\Desktop\\Dot-Net-Sep-2022-Conz\\Microservice\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LEVEL UP SOLUTIONS 1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,16 +39,6 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "dependencies": {
-            "Ocelot": {
-              "target": "Package",
-              "version": "[16.0.1, )"
-            },
-            "Ocelot.Provider.Consul": {
-              "target": "Package",
-              "version": "[16.0.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -60,9 +50,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

@@ -6,7 +6,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": "44326"
+          "Port": 44326
         }
       ],
       "UpstreamPathTemplate": "/api/gateway/catalog/findall",
@@ -18,7 +18,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": "44309"
+          "Port": 44309
         }
       ],
       "UpstreamPathTemplate": "/api/gateway/order/findall",
