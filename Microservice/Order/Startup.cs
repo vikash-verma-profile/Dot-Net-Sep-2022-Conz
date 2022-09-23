@@ -1,3 +1,4 @@
+using Common;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,6 +28,7 @@ namespace Order
         {
             services.AddControllers();
             services.AddSwaggerGen();
+            services.AddConsulConfig(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,7 +40,7 @@ namespace Order
             }
 
             app.UseHttpsRedirection();
-
+            app.UseConsul(Configuration);
             app.UseRouting();
             app.UseSwagger();
             app.UseSwaggerUI();
