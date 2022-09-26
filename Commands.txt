@@ -1,0 +1,18 @@
+rabbitmq-plugins enable rabbitmq_managment
+
+
+zookerper start
+.\zookeeper-server-start.bat C:\Kafka-bin\config\zookeeper.properties
+
+kafka start
+
+.\kafka-server-start.bat  C:\Kafka-bin\config\server.properties
+
+start producer
+
+kafka-console-producer.bat --broker-list localhost:9092 --topic temp-topic
+
+
+start consumer
+
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic temp-topic --from-beginning
