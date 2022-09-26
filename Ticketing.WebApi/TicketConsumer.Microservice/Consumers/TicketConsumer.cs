@@ -12,7 +12,7 @@ namespace TicketConsumer.Microservice.Consumers
         public Task Consume(ConsumeContext<Ticket> context)
         {
             var data = context.Message;
-            return Task.FromResult(true);
+            return Task.CompletedTask;
         }
     }
 }

@@ -11,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TicketConsumer.Microservice.Consumers;
 
 namespace TicketConsumer.Microservice
 {
@@ -27,6 +28,7 @@ namespace TicketConsumer.Microservice
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMassTransit(x => {
+                x.AddConsumer<TicketConsumer.Microservice.Consumers.TicketConsumer>();
                 x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(config =>
                 {
                     config.Host(new Uri("rabbitmq://localhost/"), h =>
@@ -34,7 +36,12 @@ namespace TicketConsumer.Microservice
                         h.Username("guest");
                         h.Password("guest");
                     });
+
+                    config.ReceiveEndpoint("ticketQueue", ep => {
+                        ep.ConfigureConsumer<TicketConsumer.Microservice.Consumers.TicketConsumer>(provider);
+                    });
                 }));
+               
             });
             services.AddMassTransitHostedService();
             services.AddControllers();

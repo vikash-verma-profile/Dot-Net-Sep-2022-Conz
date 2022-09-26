@@ -27,16 +27,12 @@ namespace Ticketing.Producer.Microservice
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMassTransit(x=> {
-                //x.AddConsumer<>
                 x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(config =>
                 {
                     config.Host(new Uri("rabbitmq://localhost/"), h =>
                     {
                         h.Username("guest");
                         h.Password("guest");
-                    });
-                    config.ReceiveEndpoint("ticketQueue", ep => { 
-                    
                     });
                 }));
             });
