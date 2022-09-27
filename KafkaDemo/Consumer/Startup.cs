@@ -49,6 +49,7 @@ namespace Consumer
                     });
                 });
             });
+            services.AddMassTransitHostedService();
         }
 
         private string GetUniqueName(string eventname)
