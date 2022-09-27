@@ -1,3 +1,5 @@
+using MassTransit;
+using MassTransit.KafkaIntegration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -6,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Producer.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +29,20 @@ namespace Producer
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddMassTransit(x =>
+            {
+                x.UsingRabbitMq((context, cfg) => cfg.ConfigureEndpoints(context));
+                x.AddRider(rider =>
+                {
+                    rider.AddProducer<VedioDeletedEvent>(nameof(VedioDeletedEvent));
+                    rider.UsingKafka((context, k) =>
+                    {
+                        k.Host("localhost:9092");
+                    });
+                });
+            });
+            services.AddMassTransitHostedService();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
