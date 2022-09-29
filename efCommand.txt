@@ -8,3 +8,8 @@ scaffold-DbContext "Data Source=DESKTOP-PP0TB7N;Initial Catalog=CatalogDB;Integr
 scoped for every request we will get new instance
 transit a new service instance is created for each object in the http request
 singleton only service instnace will be created throught the lifetime
+
+
+
+scaffold-DbContext "Data Source=DESKTOP-PP0TB7N;Initial Catalog=VedioDB;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Force
+

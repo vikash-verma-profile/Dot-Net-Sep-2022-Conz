@@ -14,7 +14,7 @@ namespace Producer.Controllers
     public class HomeController : ControllerBase
     {
         private ITopicProducer<VedioDeletedEvent> topicProducer;
-
+       
         public HomeController(ITopicProducer<VedioDeletedEvent> _topicProducer)
         {
             topicProducer = _topicProducer;
@@ -22,8 +22,16 @@ namespace Producer.Controllers
         [HttpPost]
         public async Task<IActionResult> PostAsync([FromBody]string Title)
         {
-            await topicProducer.Produce(new VedioDeletedEvent { Title = Title });
-            return Ok(new { status="success"});
+            try
+            {
+                await topicProducer.Produce(new VedioDeletedEvent { Title = Title });
+             
+            }
+            catch (Exception ex)
+            {
+                
+            }
+            return Ok(new { status = "success" });
         }
     }
 }
