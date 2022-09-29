@@ -14,6 +14,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Text;
 using Microsoft.OpenApi.Models;
+using Common;
 
 namespace CustomerAPP
 {
@@ -70,8 +71,9 @@ namespace CustomerAPP
                     };
                 });
             services.AddControllers();
-           // services.AddSwaggerGen();
-            }
+            services.AddConsulConfig(Configuration);
+            // services.AddSwaggerGen();
+        }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
             public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -80,7 +82,7 @@ namespace CustomerAPP
             {
                 app.UseDeveloperExceptionPage();
             }
-            
+            app.UseConsul(Configuration);
             app.UseHttpsRedirection();
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseRouting();

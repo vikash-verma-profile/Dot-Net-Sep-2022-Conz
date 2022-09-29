@@ -4,6 +4,86 @@
     "C:\\Users\\LEVEL UP SOLUTIONS 1\\Desktop\\Dot-Net-Sep-2022-Conz\\CustomerAPP\\CustomerAPP\\CustomerAPP.csproj": {}
   },
   "projects": {
+    "C:\\Users\\LEVEL UP SOLUTIONS 1\\Desktop\\Dot-Net-Sep-2022-Conz\\CustomerAPP\\Common\\Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\LEVEL UP SOLUTIONS 1\\Desktop\\Dot-Net-Sep-2022-Conz\\CustomerAPP\\Common\\Common.csproj",
+        "projectName": "Common",
+        "projectPath": "C:\\Users\\LEVEL UP SOLUTIONS 1\\Desktop\\Dot-Net-Sep-2022-Conz\\CustomerAPP\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\LEVEL UP SOLUTIONS 1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LEVEL UP SOLUTIONS 1\\Desktop\\Dot-Net-Sep-2022-Conz\\CustomerAPP\\Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\LEVEL UP SOLUTIONS 1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Consul": {
+              "target": "Package",
+              "version": "[1.6.10.7, )"
+            },
+            "Microsoft.AspNetCore.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.410\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\LEVEL UP SOLUTIONS 1\\Desktop\\Dot-Net-Sep-2022-Conz\\CustomerAPP\\CustomerAPP\\CustomerAPP.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +107,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\LEVEL UP SOLUTIONS 1\\Desktop\\Dot-Net-Sep-2022-Conz\\CustomerAPP\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\LEVEL UP SOLUTIONS 1\\Desktop\\Dot-Net-Sep-2022-Conz\\CustomerAPP\\Common\\Common.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

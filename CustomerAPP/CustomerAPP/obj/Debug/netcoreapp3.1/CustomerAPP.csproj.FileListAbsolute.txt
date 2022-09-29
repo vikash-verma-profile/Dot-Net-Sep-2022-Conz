@@ -138,3 +138,7 @@ C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Customer
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.RazorTargetAssemblyInfo.cache
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.csproj.CopyComplete
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.genruntimeconfig.cache
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\Consul.dll
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\Common.dll
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\Common.pdb
