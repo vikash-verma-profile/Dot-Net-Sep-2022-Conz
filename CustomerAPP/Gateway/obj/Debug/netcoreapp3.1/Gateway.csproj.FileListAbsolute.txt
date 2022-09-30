@@ -105,3 +105,4 @@ C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Gateway\
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Gateway\obj\Debug\netcoreapp3.1\Gateway.dll
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Gateway\obj\Debug\netcoreapp3.1\Gateway.pdb
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Gateway\obj\Debug\netcoreapp3.1\Gateway.genruntimeconfig.cache
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Gateway\obj\Debug\netcoreapp3.1\Gateway.csproj.AssemblyReference.cache

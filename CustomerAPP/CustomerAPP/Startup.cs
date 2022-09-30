@@ -15,6 +15,7 @@ using System.Threading.Tasks;
 using System.Text;
 using Microsoft.OpenApi.Models;
 using Common;
+using MassTransit;
 
 namespace CustomerAPP
 {
@@ -56,30 +57,41 @@ namespace CustomerAPP
                     }
                 });
             });
-            //services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).
-            //    AddJwtBearer(options =>
-            //    {
-            //        options.TokenValidationParameters = new TokenValidationParameters
-            //        {
-            //            ValidateIssuer = false,
-            //            ValidateAudience = false,
-            //            ValidateLifetime = true,
-            //            ValidateIssuerSigningKey = true,
-            //            ValidIssuer = Configuration["jwt:Issuer"],
-            //            ValidAudience = Configuration["jwt:Audience"],
-            //            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["jwt:Key"]))
-            //        };
-            //    });
-
-            services.AddAuthentication("Bearer").AddJwtBearer("Bearer", x => {
-                x.Authority = "http://localhost:5000/";
-                x.RequireHttpsMetadata = false;
-                x.TokenValidationParameters = new TokenValidationParameters
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).
+                AddJwtBearer(options =>
                 {
-                    ValidateAudience = false
-                };
-            });
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuer = false,
+                        ValidateAudience = false,
+                        ValidateLifetime = true,
+                        ValidateIssuerSigningKey = true,
+                        ValidIssuer = Configuration["jwt:Issuer"],
+                        ValidAudience = Configuration["jwt:Audience"],
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["jwt:Key"]))
+                    };
+                });
+
+            //services.AddAuthentication("Bearer").AddJwtBearer("Bearer", x => {
+            //    x.Authority = "http://localhost:5000/";
+            //    x.RequireHttpsMetadata = false;
+            //    x.TokenValidationParameters = new TokenValidationParameters
+            //    {
+            //        ValidateAudience = false
+            //    };
+            //});
             services.AddControllers();
+            services.AddMassTransit(x => {
+                x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(config =>
+                {
+                    config.Host(new Uri("rabbitmq://localhost/"), h =>
+                    {
+                        h.Username("guest");
+                        h.Password("guest");
+                    });
+                }));
+            });
+            services.AddMassTransitHostedService();
             services.AddConsulConfig(Configuration);
             // services.AddSwaggerGen();
         }

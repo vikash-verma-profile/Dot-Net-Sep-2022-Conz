@@ -1,4 +1,5 @@
 using Common;
+using MassTransit;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -10,6 +11,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using SupplierApp.Consumers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -70,6 +72,23 @@ namespace SupplierApp
                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["jwt:Key"]))
                     };
                 });
+            services.AddMassTransit(x => {
+                x.AddConsumer<OrderConsumer>();
+                x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(config =>
+                {
+                    config.Host(new Uri("rabbitmq://localhost/"), h =>
+                    {
+                        h.Username("guest");
+                        h.Password("guest");
+                    });
+
+                    config.ReceiveEndpoint("orderQueue", ep => {
+                        ep.ConfigureConsumer<OrderConsumer>(provider);
+                    });
+                }));
+
+            });
+            services.AddMassTransitHostedService();
             services.AddControllers();
             services.AddConsulConfig(Configuration);
         }
