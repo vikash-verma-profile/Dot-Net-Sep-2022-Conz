@@ -56,20 +56,29 @@ namespace CustomerAPP
                     }
                 });
             });
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).
-                AddJwtBearer(options =>
+            //services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).
+            //    AddJwtBearer(options =>
+            //    {
+            //        options.TokenValidationParameters = new TokenValidationParameters
+            //        {
+            //            ValidateIssuer = false,
+            //            ValidateAudience = false,
+            //            ValidateLifetime = true,
+            //            ValidateIssuerSigningKey = true,
+            //            ValidIssuer = Configuration["jwt:Issuer"],
+            //            ValidAudience = Configuration["jwt:Audience"],
+            //            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["jwt:Key"]))
+            //        };
+            //    });
+
+            services.AddAuthentication("Bearer").AddJwtBearer("Bearer", x => {
+                x.Authority = "http://localhost:5000/";
+                x.RequireHttpsMetadata = false;
+                x.TokenValidationParameters = new TokenValidationParameters
                 {
-                    options.TokenValidationParameters = new TokenValidationParameters
-                    {
-                        ValidateIssuer = false,
-                        ValidateAudience = false,
-                        ValidateLifetime = true,
-                        ValidateIssuerSigningKey = true,
-                        ValidIssuer = Configuration["jwt:Issuer"],
-                        ValidAudience = Configuration["jwt:Audience"],
-                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["jwt:Key"]))
-                    };
-                });
+                    ValidateAudience = false
+                };
+            });
             services.AddControllers();
             services.AddConsulConfig(Configuration);
             // services.AddSwaggerGen();

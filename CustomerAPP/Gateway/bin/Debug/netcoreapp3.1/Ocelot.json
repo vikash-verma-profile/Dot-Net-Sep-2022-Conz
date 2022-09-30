@@ -2,18 +2,26 @@
   "Routes": [
     {
       "UseServiceDiscovery": true,
-      "DownstreamPathTemplate": "/api/Catalog",
+      "DownstreamPathTemplate": "/api/Login/login-user",
       "DownstreamScheme": "https",
-      "ServiceName": "catalogService",
-      "UpstreamPathTemplate": "/api/gateway/catalog/findall",
+      "ServiceName": "customerService",
+      "UpstreamPathTemplate": "/api/gateway/customer/login",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/customer",
+      "DownstreamScheme": "https",
+      "ServiceName": "customerService",
+      "UpstreamPathTemplate": "/api/gateway/customer/get-customers",
       "UpstreamHttpMethod": [ "Get" ]
     },
     {
       "UseServiceDiscovery": true,
-      "DownstreamPathTemplate": "/WeatherForecast",
+      "DownstreamPathTemplate": "/api/supplier",
       "DownstreamScheme": "https",
-      "ServiceName": "orderService",
-      "UpstreamPathTemplate": "/api/gateway/order/findall",
+      "ServiceName": "supplierService",
+      "UpstreamPathTemplate": "/api/gateway/supplier/get-suppliers",
       "UpstreamHttpMethod": [ "Get" ]
     }
   ],

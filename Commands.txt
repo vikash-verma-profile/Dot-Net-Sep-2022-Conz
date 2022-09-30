@@ -16,3 +16,6 @@ kafka-console-producer.bat --broker-list localhost:9092 --topic temp-topic
 start consumer
 
 kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic temp-topic --from-beginning
+
+
+dotnet new --install IdentityServer4.Templates

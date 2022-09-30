@@ -68,8 +68,6 @@ C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug
 C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.pdb
 C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.genruntimeconfig.cache
 C:\Users\svdsk31\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.csproj.AssemblyReference.cache
-C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.dll
-C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.pdb
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\CustomerAPP.exe
@@ -78,6 +76,7 @@ C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Customer
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\CustomerAPP.runtimeconfig.dev.json
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\CustomerAPP.dll
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\CustomerAPP.pdb
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\Consul.dll
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\Humanizer.dll
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
@@ -112,6 +111,7 @@ C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Customer
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
@@ -125,6 +125,8 @@ C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Customer
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\Common.dll
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\Common.pdb
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.csproj.AssemblyReference.cache
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.AssemblyInfoInputs.cache
@@ -137,8 +139,6 @@ C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Customer
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\scopedcss\bundle\CustomerAPP.styles.css
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.RazorTargetAssemblyInfo.cache
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.csproj.CopyComplete
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.dll
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.pdb
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.genruntimeconfig.cache
-C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\Consul.dll
-C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\Common.dll
-C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\Common.pdb
