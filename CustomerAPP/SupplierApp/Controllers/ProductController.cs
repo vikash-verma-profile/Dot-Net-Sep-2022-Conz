@@ -13,7 +13,12 @@ namespace SupplierApp.Controllers
     public class ProductController : ControllerBase
     {
         
-        CustomerDBContext db = new CustomerDBContext();
+        CustomerDBContext db;
+
+        public ProductController(CustomerDBContext _db)
+        {
+            db = _db;
+        }
         [HttpGet]
         [Route("get-products")]
         public IEnumerable<TblProduct> getProduct()

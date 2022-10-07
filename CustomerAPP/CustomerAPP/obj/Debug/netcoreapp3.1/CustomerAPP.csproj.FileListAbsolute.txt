@@ -135,8 +135,6 @@ C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Customer
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\staticwebassets\CustomerAPP.StaticWebAssets.Manifest.cache
-C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\staticwebassets\CustomerAPP.StaticWebAssets.xml
-C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\scopedcss\bundle\CustomerAPP.styles.css
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.RazorTargetAssemblyInfo.cache
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.csproj.CopyComplete
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\CustomerAPP.dll
@@ -159,3 +157,5 @@ C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Customer
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\Shared.Model.dll
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\bin\Debug\netcoreapp3.1\Shared.Model.pdb
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\staticwebassets\CustomerAPP.StaticWebAssets.xml
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\CustomerAPP\obj\Debug\netcoreapp3.1\scopedcss\bundle\CustomerAPP.styles.css

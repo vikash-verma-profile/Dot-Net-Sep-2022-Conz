@@ -86,8 +86,6 @@ C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Gateway\
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Gateway\obj\Debug\netcoreapp3.1\Gateway.RazorAssemblyInfo.cache
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Gateway\obj\Debug\netcoreapp3.1\Gateway.RazorAssemblyInfo.cs
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Gateway\obj\Debug\netcoreapp3.1\staticwebassets\Gateway.StaticWebAssets.Manifest.cache
-C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Gateway\obj\Debug\netcoreapp3.1\staticwebassets\Gateway.StaticWebAssets.xml
-C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Gateway\obj\Debug\netcoreapp3.1\scopedcss\bundle\Gateway.styles.css
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Gateway\obj\Debug\netcoreapp3.1\Gateway.TagHelpers.input.cache
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Gateway\obj\Debug\netcoreapp3.1\Gateway.TagHelpers.output.cache
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Gateway\obj\Debug\netcoreapp3.1\Gateway.RazorCoreGenerate.cache
@@ -106,3 +104,5 @@ C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Gateway\
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Gateway\obj\Debug\netcoreapp3.1\Gateway.pdb
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Gateway\obj\Debug\netcoreapp3.1\Gateway.genruntimeconfig.cache
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Gateway\obj\Debug\netcoreapp3.1\Gateway.csproj.AssemblyReference.cache
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Gateway\obj\Debug\netcoreapp3.1\staticwebassets\Gateway.StaticWebAssets.xml
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\CustomerAPP\Gateway\obj\Debug\netcoreapp3.1\scopedcss\bundle\Gateway.styles.css

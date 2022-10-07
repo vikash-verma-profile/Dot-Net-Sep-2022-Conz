@@ -62,3 +62,11 @@ C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\UnitTestCase\UnitTes
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\UnitTestCase\UnitTestCase\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\UnitTestCase\UnitTestCase\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\UnitTestCase\UnitTestCase\obj\Debug\netcoreapp3.1\UnitTestCase.csproj.CopyComplete
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\UnitTestCase\UnitTestCase\bin\Debug\netcoreapp3.1\Azure.Core.dll
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\UnitTestCase\UnitTestCase\bin\Debug\netcoreapp3.1\Azure.Storage.Blobs.dll
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\UnitTestCase\UnitTestCase\bin\Debug\netcoreapp3.1\Azure.Storage.Common.dll
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\UnitTestCase\UnitTestCase\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\UnitTestCase\UnitTestCase\bin\Debug\netcoreapp3.1\System.IO.Hashing.dll
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\UnitTestCase\UnitTestCase\bin\Debug\netcoreapp3.1\System.Memory.Data.dll
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\UnitTestCase\UnitTestCase\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\UnitTestCase\UnitTestCase\bin\Debug\netcoreapp3.1\System.Text.Json.dll

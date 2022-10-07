@@ -15,7 +15,11 @@ namespace SupplierApp.Controllers
     public class SupplierController : ControllerBase
     {
 
-        CustomerDBContext db = new CustomerDBContext();
+        CustomerDBContext db ;
+        public SupplierController(CustomerDBContext _db)
+        {
+            db = _db;
+        }
         [HttpGet]
         public IEnumerable<Supplier> Get()
         {

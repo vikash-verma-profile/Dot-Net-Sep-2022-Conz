@@ -16,6 +16,8 @@ using System.Text;
 using Microsoft.OpenApi.Models;
 using Common;
 using MassTransit;
+using Microsoft.EntityFrameworkCore;
+using CustomerAPP.Models;
 
 namespace CustomerAPP
 {
@@ -80,6 +82,8 @@ namespace CustomerAPP
             //        ValidateAudience = false
             //    };
             //});
+            services.AddDbContext<CustomerDBContext>(x => x.UseSqlServer(Configuration.GetConnectionString("CustomerDbConnection")));
+
             services.AddControllers();
             services.AddMassTransit(x => {
                 x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(config =>

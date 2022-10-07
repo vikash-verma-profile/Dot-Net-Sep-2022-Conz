@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -12,6 +13,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using SupplierApp.Consumers;
+using SupplierApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -88,6 +90,7 @@ namespace SupplierApp
                 }));
 
             });
+            services.AddDbContext<CustomerDBContext>(x => x.UseSqlServer(Configuration.GetConnectionString("SupplierDbConnection")));
             services.AddMassTransitHostedService();
             services.AddControllers();
             services.AddConsulConfig(Configuration);

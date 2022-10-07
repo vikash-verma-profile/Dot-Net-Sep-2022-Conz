@@ -17,11 +17,12 @@ namespace CustomerAPP.Controllers
     [ApiController]
     public class LoginController : ControllerBase
     {
-        CustomerDBContext db = new CustomerDBContext();
+        CustomerDBContext db;
         private IConfiguration _config;
-        public LoginController(IConfiguration config)
+        public LoginController(IConfiguration config, CustomerDBContext _db)
         {
             _config = config;
+            db = _db;
         }
         [HttpPost]
         [Route("login-user")]

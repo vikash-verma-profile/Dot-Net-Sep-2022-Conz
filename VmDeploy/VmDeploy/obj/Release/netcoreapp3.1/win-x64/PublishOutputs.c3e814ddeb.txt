@@ -1,0 +1,7 @@
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\VmDeploy\VmDeploy\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\VmDeploy.exe
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\VmDeploy\VmDeploy\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\appsettings.Development.json
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\VmDeploy\VmDeploy\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\appsettings.json
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\VmDeploy\VmDeploy\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\VmDeploy.dll
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\VmDeploy\VmDeploy\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\VmDeploy.deps.json
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\VmDeploy\VmDeploy\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\VmDeploy.runtimeconfig.json
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Sep-2022-Conz\VmDeploy\VmDeploy\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\VmDeploy.pdb

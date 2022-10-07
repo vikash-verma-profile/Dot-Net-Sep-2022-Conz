@@ -15,10 +15,11 @@ namespace CustomerAPP.Controllers
     public class OrderController : ControllerBase
     {
         private readonly IBus bus;
-        CustomerDBContext db = new CustomerDBContext();
-        public OrderController(IBus _bus)
+        CustomerDBContext db ;
+        public OrderController(IBus _bus, CustomerDBContext _db)
         {
             bus = _bus;
+            db = _db;
         }
         [HttpPost]
         public async Task<IActionResult> CreateOrder(TblOrder order)

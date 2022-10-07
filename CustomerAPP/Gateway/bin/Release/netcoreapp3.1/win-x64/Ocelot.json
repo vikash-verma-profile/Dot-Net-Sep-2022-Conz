@@ -1,0 +1,60 @@
+{
+  "Routes": [
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/Login/login-user",
+      "DownstreamScheme": "https",
+      "ServiceName": "customerService",
+      "UpstreamPathTemplate": "/api/gateway/customer/login",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/customer",
+      "DownstreamScheme": "https",
+      "ServiceName": "customerService",
+      "UpstreamPathTemplate": "/api/gateway/customer/get-customers",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/order/get-order",
+      "DownstreamScheme": "https",
+      "ServiceName": "customerService",
+      "UpstreamPathTemplate": "/api/gateway/customer/get-orders",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/order",
+      "DownstreamScheme": "https",
+      "ServiceName": "customerService",
+      "UpstreamPathTemplate": "/api/gateway/customer/create-order",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/supplier",
+      "DownstreamScheme": "https",
+      "ServiceName": "supplierService",
+      "UpstreamPathTemplate": "/api/gateway/supplier/get-suppliers",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/product/get-products",
+      "DownstreamScheme": "https",
+      "ServiceName": "supplierService",
+      "UpstreamPathTemplate": "/api/gateway/supplier/get-products",
+      "UpstreamHttpMethod": [ "Get" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    // "BaseUrl": "http://localhost:44363"
+    "ServiceDiscoveryProvider": {
+      "Host": "localhost",
+      "Port": "8500",
+      "Type": "Consul"
+    }
+  }
+}

@@ -14,7 +14,12 @@ namespace CustomerAPP.Controllers
     [Authorize(AuthenticationSchemes =Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
     public class CustomerController : ControllerBase
     {
-        CustomerDBContext db = new CustomerDBContext();
+        CustomerDBContext db;
+
+        public CustomerController(CustomerDBContext _db)
+        {
+            db = _db;
+        }
         [HttpGet]
         public IEnumerable<Customer> Get()
         {

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Azure.Storage.Blobs;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -29,25 +30,42 @@ namespace UnitTestCase.Controllers
             return Ok(new { Value = encoded });
         }
         [HttpPost,DisableRequestSizeLimit]
-        public IActionResult upload()
+        public async Task<IActionResult> upload()
         {
             var file = Request.Form.Files[0];
-            var foldername = "Images";
-            var pathToSave = Path.Combine(Directory.GetCurrentDirectory(),foldername);
+            var pathToSave = Directory.GetCurrentDirectory();
             if (file.Length > 0)
             {
-                var fileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
-                var fullPath = Path.Combine(pathToSave, fileName);
-                var dbPath = Path.Combine(foldername,fileName);
-                using (var stream = new FileStream(fullPath, FileMode.Create))
+                try
                 {
-                    file.CopyTo(stream);
+                    var fileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
+                    var _filename = Path.GetFileNameWithoutExtension(fileName);
+                    fileName = _filename + DateTime.Now.ToString("yyyyMMddHHmmss") + ".jpg";
+                    var fullPath = Path.Combine(pathToSave, fileName);
+                    var dbPath = fileName;
+                    using (var stream = new FileStream(fullPath, FileMode.Create))
+                    {
+                        file.CopyTo(stream);
+                    }
+
+                    string connectionstring = "DefaultEndpointsProtocol=https;AccountName=sampleaccount551;AccountKey=BpG0LDh7UFiBd+L5rmXZcNX8VXbAVBc9rDER/kW48Te3aKvfl7tA/LZhCSPiDZTBfdPpHaO4i+qp+AStLSsweA==;EndpointSuffix=core.windows.net";
+                    string containerName = "images";
+                    BlobContainerClient container = new BlobContainerClient(connectionstring, containerName);
+                    var blob = container.GetBlobClient(fileName);
+                    var blobstream = System.IO.File.OpenRead(fileName);
+                    await blob.UploadAsync(blobstream);
+                    var URI = blob.Uri.AbsoluteUri;
+                    TblImage obj = new TblImage();
+                    obj.ImageUrl = dbPath;
+                    db.TblImages.Add(obj);
+                    db.SaveChanges();
+                    return Ok(new { dbPath });
                 }
-                TblImage obj = new TblImage();
-                obj.ImageUrl = dbPath;
-                db.TblImages.Add(obj);
-                db.SaveChanges();
-                return Ok(new { dbPath });
+                catch (Exception ex)
+                {
+                    return BadRequest();
+                }
+               
             }
             else
             {
