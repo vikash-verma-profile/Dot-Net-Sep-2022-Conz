@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FunctionApp1": {
+      "commandName": "Project",
+      "commandLineArgs": "host start --port 7047 --nodeDebugPort 5860"
+    }
+  }
+}
